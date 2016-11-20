@@ -18,7 +18,7 @@ body {
 }
 
 body {
-    margin-top: 95px;
+    margin-top: 135px;
     background-color: #E9E9E9;
 }
 
@@ -44,8 +44,9 @@ header {
 }
 
 header > h1 {
-    display: block;
+    display: inline-block;
     width: 100%; 
+    margin-bottom: 5px;
     border-bottom: 2px solid rgb(0,0,0);
 }
 
@@ -55,11 +56,32 @@ img {
 }
 
 /**********************
+    SEARCH BAR
+**********************/ 
+
+#search {
+    display: inline-block;
+    width: 200px;
+    margin: 5px auto;
+    max-width: 460px;
+    height: 2.25em;
+    border-radius: 3px;
+    border: 2px solid #D5D5D5;
+	padding-left: 10px;
+	font-size: 1em;
+}
+
+#search:focus {
+    border: 2px solid #B5B5B5; 
+    outline: none; 
+}
+
+/**********************
     LIGHTBOX
 **********************/ 
 
 #overlay {
-    background: rgba(0,0,0,.5); 
+    background: rgba(0,0,0,.7); 
     width: 100vw; 
     height: 100vh; 
     position: fixed;
@@ -68,21 +90,34 @@ img {
     text-align: center; 
 }
 
-#overlay p {
-    width: 80%;
-    max-width: 600px; 
+#info {
+    width: 100%;
+    padding: 10px;
+    background: white;
     min-height: 3em;
     margin-top: 0;
-    color: white;
     text-align: left;
     font-size: .75em; 
 }
 
+#info ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
 #lightboxContainer {
-    width: 75%;
-    max-width: 980px; 
+    position: relative;
+    width: 80%;
+    max-width: 500px; 
+    background: green;
     margin: 10% auto 0; 
 }
+
+#lightboxContainer img {
+    width: 75%;
+    margin: 10px auto; 
+}
+
 
 #navContainer {
      margin-top: 25px;
@@ -103,28 +138,14 @@ img {
 }
 
 #navClose {
-    width: 60%;
+    position: absolute; 
+    top: -30px;
+    left: 0; 
+    width: 40%;
+    text-align: left;
 }
 
 
-/**********************
-    SEARCH BAR
-**********************/ 
-
-#search {
-    width: 80%; 
-    max-width: 460px;
-    height: 2.25em;
-    border-radius: 3px;
-    border: 2px solid #D5D5D5;
-	padding-left: 10px;
-	font-size: 1em;
-}
-
-#search:focus {
-    border: 2px solid #B5B5B5; 
-    outline: none; 
-}
 
 /**********************
     GALLERY
@@ -162,10 +183,15 @@ li.gallery-item {
     }
     
     #lightboxContainer {
-        width: 65%;
-        max-width: 980px; 
-        margin: 2% auto 0; 
+        width: 50%;
     }
+        
+    #lightboxContainer img {
+        width: 55%;
+        margin: 10px auto; 
+    }
+    
+
 }
 
 
