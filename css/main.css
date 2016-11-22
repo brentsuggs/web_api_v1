@@ -38,14 +38,15 @@ header {
     position: fixed; 
     top: 0; 
     width: 100%;
-    padding: 0 5%; 
+    padding: 1% 5%; 
     background-color: white;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3)
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
 }
 
 header > h1 {
     display: inline-block;
     width: 100%; 
+    margin-top: 0;
     margin-bottom: 5px;
     border-bottom: 2px solid rgb(0,0,0);
 }
@@ -61,8 +62,8 @@ img {
 
 #search {
     display: inline-block;
-    width: 200px;
-    margin: 5px auto;
+    vertical-align: baseline;
+    width: 30%;
     max-width: 460px;
     height: 2.25em;
     border-radius: 3px;
@@ -75,6 +76,8 @@ img {
     border: 2px solid #B5B5B5; 
     outline: none; 
 }
+
+
 
 /**********************
     LIGHTBOX
@@ -163,12 +166,109 @@ li.gallery-item {
 }
 
 .gallery-item img {
-    box-shadow: 0 2px 1px 1px rgba(0,0,0,.4)
+    box-shadow: 0 2px 1px 1px rgba(0,0,0,.4);
 }
 
 
 /**********************
+    DICE
+**********************/
+
+#diceContainer {
+    display: inline-block; 
+    width: 50%; 
+    margin-left: 10%; 
+}
+
+#rollBtn {
+    height: 2.25em; 
+    margin-right: 25px;
+}
+
+.die.one .dot { 
+	box-shadow: 0 .2em 0 #FFF; 
+}
+.die.two .dot { 
+	background: transparent;
+	box-shadow: -2.3em -2.3em 0 #345, 
+		     2.3em  2.3em 0 #345, 
+		    -2.3em -2.3em 0 #FFF, 
+		     2.3em  2.4em 0 #FFF;
+}
+.die.three .dot { 
+	box-shadow: -2.3em -2.3em 0 #345, 
+		     2.3em  2.3em 0 #345, 
+		    -2.3em -2.3em 0 #FFF, 
+		     2.3em  2.4em 0 #FFF, 
+		         0   .2em 0 #FFF;
+}
+.die.four .dot { 
+	background: transparent;
+        box-shadow: -2.3em -2.3em 0 #345, 
+        	     2.3em  2.3em 0 #345, 
+        	    -2.3em  2.3em 0 #345, 
+        	     2.3em -2.3em 0 #345, 
+        	    -2.3em -2.3em 0 #FFF, 
+        	     2.3em  2.4em 0 #FFF, 
+        	    -2.3em  2.4em 0 #FFF, 
+        	     2.3em -2.3em 0 #FFF; 
+}
+.die.five .dot { 
+	box-shadow: -2.3em -2.3em 0 #345, 
+		     2.3em  2.3em 0 #345, 
+		    -2.3em  2.3em 0 #345, 
+		     2.3em -2.3em 0 #345, 
+		    -2.3em -2.2em 0 #FFF, 
+		     2.3em -2.2em 0 #FFF, 
+		     2.3em  2.4em 0 #FFF, 
+		    -2.3em  2.4em 0 #FFF,
+		         0   .2em 0 #FFF; 
+}
+.die.six .dot {
+	background: transparent;
+	box-shadow: -2.3em -2.3em 0 #345,
+		    -2.3em      0 0 #345,
+		    -2.3em  2.3em 0 #345,
+		     2.3em -2.3em 0 #345,
+		     2.3em      0 0 #345,
+		     2.3em  2.3em 0 #345,
+		    -2.3em -2.1em 0 #FFF,
+		    -2.3em   .2em 0 #FFF,
+		    -2.3em  2.4em 0 #FFF,
+		     2.3em  2.4em 0 #FFF,
+		     2.3em   .2em 0 #FFF,
+		     2.3em -2.1em 0 #FFF;
+}
+.die {
+	border-top: 1px solid #f1f1f1;
+	width: 25px; height: 25px;
+    margin-left: 10px;
+	border-radius: 5px;
+	position: relative;
+	font-size: 3px;
+	display: inline-block;
+	box-shadow: 0px 5px 0 #CCC, 0 6px 3px #444, 0 8px 5px #999;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f1f1f1 80%);
+}
+.dot {
+	width: 20%; 
+	height: 20%; 
+	left: 50%; 
+	top: 50%;
+	margin: -10%;
+	background: #345;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+}
+
+
+
+
+/**********************
+***********************
     MEDIA QUERIES
+***********************
 **********************/ 
 
 @media screen and (min-width: 480px) {
