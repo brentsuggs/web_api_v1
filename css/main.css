@@ -40,7 +40,7 @@ header {
     width: 100%;
     padding: 1% 5%; 
     background-color: white;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3)
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
 }
 
 header > h1 {
@@ -166,7 +166,7 @@ li.gallery-item {
 }
 
 .gallery-item img {
-    box-shadow: 0 2px 1px 1px rgba(0,0,0,.4)
+    box-shadow: 0 2px 1px 1px rgba(0,0,0,.4);
 }
 
 
@@ -186,21 +186,21 @@ li.gallery-item {
 }
 
 .die.one .dot { 
-	box-shadow: 0 .2em 0 #FFF 
+	box-shadow: 0 .2em 0 #FFF; 
 }
 .die.two .dot { 
 	background: transparent;
 	box-shadow: -2.3em -2.3em 0 #345, 
 		     2.3em  2.3em 0 #345, 
 		    -2.3em -2.3em 0 #FFF, 
-		     2.3em  2.4em 0 #FFF 
+		     2.3em  2.4em 0 #FFF;
 }
 .die.three .dot { 
 	box-shadow: -2.3em -2.3em 0 #345, 
 		     2.3em  2.3em 0 #345, 
 		    -2.3em -2.3em 0 #FFF, 
 		     2.3em  2.4em 0 #FFF, 
-		         0   .2em 0 #FFF 
+		         0   .2em 0 #FFF;
 }
 .die.four .dot { 
 	background: transparent;
@@ -211,7 +211,7 @@ li.gallery-item {
         	    -2.3em -2.3em 0 #FFF, 
         	     2.3em  2.4em 0 #FFF, 
         	    -2.3em  2.4em 0 #FFF, 
-        	     2.3em -2.3em 0 #FFF 
+        	     2.3em -2.3em 0 #FFF; 
 }
 .die.five .dot { 
 	box-shadow: -2.3em -2.3em 0 #345, 
@@ -222,7 +222,7 @@ li.gallery-item {
 		     2.3em -2.2em 0 #FFF, 
 		     2.3em  2.4em 0 #FFF, 
 		    -2.3em  2.4em 0 #FFF,
-		         0   .2em 0 #FFF 
+		         0   .2em 0 #FFF; 
 }
 .die.six .dot {
 	background: transparent;
@@ -237,7 +237,7 @@ li.gallery-item {
 		    -2.3em  2.4em 0 #FFF,
 		     2.3em  2.4em 0 #FFF,
 		     2.3em   .2em 0 #FFF,
-		     2.3em -2.1em 0 #FFF
+		     2.3em -2.1em 0 #FFF;
 }
 .die {
 	border-top: 1px solid #f1f1f1;
@@ -248,7 +248,7 @@ li.gallery-item {
 	font-size: 3px;
 	display: inline-block;
 	box-shadow: 0px 5px 0 #CCC, 0 6px 3px #444, 0 8px 5px #999;
-	background-image: linear-gradient(top, #fefefe, #f1f1f1 80%)
+	background-image: -webkit-linear-gradient(top, #fefefe, #f1f1f1 80%);
 }
 .dot {
 	width: 20%; 
